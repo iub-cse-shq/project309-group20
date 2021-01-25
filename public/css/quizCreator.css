@@ -1,0 +1,77 @@
+#question-field{
+    border-style: groove;
+    border-width: 1px;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 20px;
+    width: 80%;
+    margin-left: 60px;
+}
+.question{
+    width: 80%;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 30px;
+    
+}
+body {
+    background-color: white;
+}
+.correct{
+    width: 50px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+#title{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+#quizTitle{
+    font-family: 'Raleway', sans-serif;
+   
+}
+input{
+    width: 390px;
+}
+#addb{
+    color: #d5ab4e;
+	width:20px;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    background: none;
+    font-size: 50px;
+    margin-left: 20px;
+    display: inline-block;
+  
+}
+
+#doneb{
+    color: green;
+	width:20px;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    background: none;
+    font-size: 50px;
+    margin-left: 20px;
+    display: inline-block;
+  
+}
+#cancelb{
+    color: red;
+	width:20px;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    background: none;
+    font-size: 50px;
+    margin-left: 20px;
+    display: inline-block;
+  
+}

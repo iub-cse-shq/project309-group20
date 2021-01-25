@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Creator | Online quiz</title>
+        <link rel = "stylesheet" href = "../../css/quizCreator.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://kit.fontawesome.com/eabb18531a.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body onload = "setBGColor()">
+        <h1 id = "title">Quiz Creator Studio</h1>
+        <hr>
+        
+        <div class="form-field">
+            
+            <input class="w3-input w3-border w3-animate-input" style = " width: 50%;margin-left: 40px; max-width: 80%;"id = "name" type = "text" placeholder="Enter quiz title:" name="name" autofocus/>
+        </div>
+        <br>
+        <br>
+        <div id = "allQuestions">
+            <div id="question-field">
+                <label>Question 1: </label>
+                <input 
+                 class = "question" id = "q1" type = "text" autofocus/>
+                <br>
+                <br>
+                <label>Answer 1: </label>
+                <input id = "1a1" type = "text" autofocus/>
+                <label>Answer 2: </label>
+                <input id = "1a2" type = "text" autofocus/>
+                <br>
+                <br>
+                <label>Answer 3: </label>
+                <input id = "1a3"  type = "text"autofocus/>
+                <label>Answer 4: </label>
+                <input id = "1a4"  type = "text" autofocus/>
+                <br>
+                <br>
+                <label>Correct Answer (1-4) :</label>
+                <input class = "correct" id = "correct1"  type = "number" autofocus/>
+            </div>
+        </div>
+        <br>
+        <button id = "addb" onclick = "addQuestion()"><i class="fas fa-plus-circle"></i></button>
+        
+        
+        <div class="form-field">
+            <button id = "doneb" onclick = "updateDatabase()"><i class="fas fa-check-circle"></i></button>
+        </div>
+        
+        <br>
+        
+        <button id = "cancelb" onclick = 'cancelQuiz()'><i class="fas fa-times-circle"></i></button>
+        
+        <script src = "../../socket.io/socket.io.js"></script>
+        <script src = "../../js/quizCreator.js"></script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Host |Online quiz</title>
+        <link rel = "stylesheet" href = "../css/host.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+    </head>
+    <body>
+        <button id = "cancel" onclick = "endGame()">Cancel the quiz</button>
+        <h2 id = "title">Join this quiz using the quiz Pin: </h2>
+        <h1 id = "gamePinText"></h1>
+        <textarea style = "width: 700px; height: 500px;" readonly id = 'players'></textarea>
+        <br>
+        <button id = 'start' onclick = "startGame()">Start the quiz</button>
+        <br>
+        <br>
+        <script src = "../socket.io/socket.io.js"></script>
+        <script src = "../js/libs/jqueryLibrary.js"></script>
+        <script src = "../js/libs//deparam.js"></script>
+        <script src = "../js/host.js"></script>
+    </body>
+</html>
+
